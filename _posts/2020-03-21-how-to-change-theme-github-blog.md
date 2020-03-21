@@ -88,7 +88,7 @@ git에 대해 잘 모른다면 이 작업이 난해하게 느껴질 수도 있�
 
 	3.8.5 버전으로 변경해주는 이유는 4.0.0에서 github-pages가 지원되지 않기 때문이다. 
 
-	![GitHub Pages - Dependency versions](https://pages.github.com/versions/)
+	[GitHub Pages - Dependency versions](https://pages.github.com/versions/)
 
 
 2. `_config.yml` 파일 수정 - `jekyll-include-cache` plugin 설정 
