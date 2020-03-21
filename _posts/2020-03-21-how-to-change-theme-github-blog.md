@@ -95,6 +95,6 @@ git에 대해 잘 모른다면 이 작업이 난해하게 느껴질 수도 있�
 	$ bundle update
 	```
 
-	그리고 `git push` 해준다.   
+	그리고 `$ git push` 해준다.   
 
 
