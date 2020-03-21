@@ -59,95 +59,62 @@ Demo를 확인해보니 깔끔하고 괜찮은 것 같아 이 테마로 적용�
 * Gem-based method   
 * Remote theme method 
 
-Gem-based로 적용해보겠다.  
+
+GitHub Pages와의 호환을 위해서는 Remote theme method 방식으로 적용해야 한다. 
 나의 경우 vi를 사용해서 편집했는데, Github 페이지 내에서도 수정 가능하다.   
 
 _git pull & push 작업이 계속해서 이루어지기 때문에,   
 git에 대해 잘 모른다면 이 작업이 난해하게 느껴질 수도 있을 듯하다._   
 
+
 1. `Gemfile` 수정 
 	```
-	$ vi Gemfile
+	$ vi Gemfile 
 
-	# gem "minima", "~> 2.5"
-	gem "minimal-mistakes-jekyll"
+	#gem "jekyll", "~> 4.0.0"
+	gem "jekyll", "~> 3.8.5"
+
+	...
+
+	gem "github-pages", group: :jekyll_plugins
+
+	...
+
+	group :jekyll_plugins do
+	  gem "jekyll-feed"
+	  gem "jekyll-include-cache"
 	```
 
-	기존 적용되어있던 gem "minima", "~> 2.5"는 주석처리하고,   
-	minimal-mistakes-jekyll을 추가해주었다.   
+
+	3.8.5 버전으로 변경해주는 이유는 4.0.0에서 github-pages가 지원되지 않기 때문이다. 
+
+	![GitHub Pages - Dependency versions](https://pages.github.com/versions/)
 
 
-2. Bundler 명령어 실행 - fetch & update bundled gems
+2. `_config.yml` 파일 수정 - `jekyll-include-cache` plugin 설정 
 	```
-	$ bundle
-	```
+	$ vi _config.yml 
 
-
-3. `_config.yml` 파일 수정 
-	```
-	$ vi _config.yml
-
-	theme: minimal-mistakes-jekyll
+	plugins: 
+	  - jekyll-feed
+	  - jekyll-include-cache
 	```
 
-4. theme update 
+
+
+3. Fetch and update bundled gems 
 	```
-	$ bundle update
+	$ bundle 
 	```
 
-	그리고 `$ git push` 해준다.   
+
+4. `_config.yml` 파일 수정 - theme 설정
+	```
+	# remote_theme
+	remote_theme: "mmistakes/minimal-mistakes@4.19.1"
+	```
 
 
 
-## github 블로그가 빈 페이지로 뜨는 문제 발생 
-위의 작업까지 마치고, 내 PC에서 확인했을 때는 정상적으로 테마적용이 된 모습이었다.   
-그러나 github 원격 저장소에 push 후 블로그가 빈 페이지로 뜨는 문제가 발생했다. 
 
-때문에 remote theme method로 변경해서 적용해보았다. 
-
-* `Gemfile` 수정 
-```
-$ vi Gemfile 
-
-#gem "jekyll", "~> 4.0.0"
-gem "jekyll", "~> 3.8.5"
-
-...
-
-gem "github-pages", group: :jekyll_plugins
-
-...
-
-group :jekyll_plugins do
-  gem "jekyll-feed"
-  gem "jekyll-include-cache"
-```
-
-
-3.8.5 버전으로 변경해주는 이유는 4.0.0에서 github-pages가 지원되지 않기 때문이다. 
-
-![GitHub Pages - Dependency versions](https://pages.github.com/versions/)
-
-
-* `jekyll-include-cache` plugin 추가 
-```
-$ vi _config.yml 
-
-plugins: 
-  - jekyll-feed
-  - jekyll-include-cache
-```
-
-
-* Fetch and update bundled gems 
-```
-$ bundle 
-```
-
-
-* remote_theme 추가 
-```
-# remote_theme
-remote_theme: "mmistakes/minimal-mistakes@4.19.1"
-```
 
