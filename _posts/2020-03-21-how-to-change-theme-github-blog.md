@@ -10,11 +10,11 @@ tags: jekyll github
 # Theme 선택 및 적용 
 Theme 적용에는 두 가지 방법이 있다. 
 * 지원되는 테마 사용   
-![Github themes](https://pages.github.com/themes/)
+[Github themes](https://pages.github.com/themes/)
 * 그 외 GitHub에 호스트된 Jekyll theme 사용   
-![jekyllthemes](http://jekyllthemes.org/)
+[jekyllthemes](http://jekyllthemes.org/)
 
-참고: ![Adding a theme to your github pages site using jekyll](https://help.github.com/en/github/working-with-github-pages/adding-a-theme-to-your-github-pages-site-using-jekyll)
+참고: [Adding a theme to your github pages site using jekyll](https://help.github.com/en/github/working-with-github-pages/adding-a-theme-to-your-github-pages-site-using-jekyll)
 
 
 ## 지원되는 테마 사용 
@@ -30,7 +30,7 @@ theme: minima
 
 
 ## GitHub에 호스팅된 Jekyll theme 사용 
-* ![jekyllthemes](http://jekyllthemes.org/)   
+* [jekyllthemes](http://jekyllthemes.org/)   
 
 위 사이트에서 theme 목록을 확인할 수 있다.   
 
