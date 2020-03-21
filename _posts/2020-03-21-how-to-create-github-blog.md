@@ -92,7 +92,7 @@ $ jekyll serve
 ```
 
 http://localhost:4000 으로 접속해보니, 잘 접속되었다. 
-
+`Welcome to Jekyll!` 글을 확인해보면 포스팅에 관해 작성되어있다. 
 
 
 # git push 
@@ -112,7 +112,7 @@ https://sloth-bear.github.io/
 
 
 # 글쓰기 
-마크다운을 사용해 글을 작성했다. 파일명은 `how-to-create-github-blog.md` 이다.
+마크다운을 사용해 글을 작성했다. 파일명은 `2020-03-21-how-to-create-github-blog.md` 이다.
 현재 보여지고 있는 이 게시물이다. 
 이 파일을 repository 내의 `_post` 폴더에 넣어두었다. 
 
