@@ -52,7 +52,7 @@ plugins:
 
 author:
   name   : "현정 김"
-  avatar : "/asserts/images/bio-photo.jpg"
+  avatar : "/assets/images/bio-photo.jpg"
   bio    : "느리지만 나아가는 개발자입니다."
   links:
     - label: "GitHub"
