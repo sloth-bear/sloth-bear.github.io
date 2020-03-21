@@ -8,7 +8,7 @@ permalink: /post/github/
 
 
 # Theme 선택 및 적용 
-Theme 적용에는 방법이 있다. 
+Theme 적용에는 두 가지 방법이 있다. 
 * 지원되는 테마 사용   
 ![Github themes](https://pages.github.com/themes/)
 * 그 외 GitHub에 호스트된 Jekyll theme 사용   
