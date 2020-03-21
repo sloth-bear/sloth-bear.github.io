@@ -98,3 +98,56 @@ git에 대해 잘 모른다면 이 작업이 난해하게 느껴질 수도 있�
 	그리고 `$ git push` 해준다.   
 
 
+
+## github 블로그가 빈 페이지로 뜨는 문제 발생 
+위의 작업까지 마치고, 내 PC에서 확인했을 때는 정상적으로 테마적용이 된 모습이었다.   
+그러나 github 원격 저장소에 push 후 블로그가 빈 페이지로 뜨는 문제가 발생했다. 
+
+때문에 remote theme method로 변경해서 적용해보았다. 
+
+* `Gemfile` 수정 
+```
+$ vi Gemfile 
+
+#gem "jekyll", "~> 4.0.0"
+gem "jekyll", "~> 3.8.5"
+
+...
+
+gem "github-pages", group: :jekyll_plugins
+
+...
+
+group :jekyll_plugins do
+  gem "jekyll-feed"
+  gem "jekyll-include-cache"
+```
+
+
+3.8.5 버전으로 변경해주는 이유는 4.0.0에서 github-pages가 지원되지 않기 때문이다. 
+
+![GitHub Pages - Dependency versions](https://pages.github.com/versions/)
+
+
+* `jekyll-include-cache` plugin 추가 
+```
+$ vi _config.yml 
+
+plugins: 
+  - jekyll-feed
+  - jekyll-include-cache
+```
+
+
+* Fetch and update bundled gems 
+```
+$ bundle 
+```
+
+
+* remote_theme 추가 
+```
+# remote_theme
+remote_theme: "mmistakes/minimal-mistakes@4.19.1"
+```
+

@@ -29,9 +29,12 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  sloth-bear
 
 # Build settings
-theme: minimal-mistakes-jekyll 
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
+
+# remote_theme 
+remote_theme: "mmistakes/minimal-mistakes@4.19.1"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
