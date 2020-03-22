@@ -13,12 +13,17 @@ tags: jekyll github
 
 
 
-# 서론
 * __2020-03-22 추가__  
   GitHub Pages Blogs를 만들기 위해 Jekyll를 비롯해 여러 패키지들을 설치했다.  
   그러나 theme를 적용해보고 나니, Pages를 처음부터 하나하나 만들어보고 싶은 게 아니라면,  
   내가 원하는 theme의 repository에서 모든 폴더를 가져와 만드는 것이 가장 간편하다.  
-  repository에서 모든 폴더를 가져와서 만드는 과정은 [Github 블로그 만들기 2 - theme 적용하기 (feat. minimal-mistakes)](https://sloth-bear.github.io/blog/how-to-create-github-blog/) 에서 참조할 수 있다. 
+  repository에서 모든 폴더를 가져와서 만드는 과정은  
+  [Github 블로그 만들기 2 - theme 적용하기 (feat. minimal-mistakes)](https://sloth-bear.github.io/blog/how-to-create-github-blog/) 에서 참조할 수 있다. 
+---
+
+
+
+# 서론
 
 Tistory에서 블로그를 가입한지 오래,  
 꾸준히 써보고자 했지만 유지되지가 않았다.  
