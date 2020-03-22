@@ -72,11 +72,11 @@ git에 대해 익숙하지 않다면 다소 난해하고, 추가적인 검색이
 
 
 1. `mmistakes/mm-github-pages-starter` download
-	* Repository 내용 다운받기 ([mmistakes/mm-github-pages-starter](https://github.com/mmistakes/mm-github-pages-starter))
-	`Donwload Zip` 혹은 git clone 
+	* Repository 내용 다운받기 ([mmistakes/mm-github-pages-starter](https://github.com/mmistakes/mm-github-pages-starter)) - `Donwload Zip` 혹은 `git clone`
 	```
 	$ git clone https://github.com/mmistakes/mm-github-pages-starter
 	```
+	가장 최소한으로 구성된 mmistakes repository를 가져왔다. 
 
 
 2. Repository 복사하기 
