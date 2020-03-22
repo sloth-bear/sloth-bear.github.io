@@ -18,8 +18,11 @@ github_username          : "sloth-bear"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
+
+# comments
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
@@ -53,6 +56,7 @@ algolia:
 google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
+  
 # SEO Related
 google_site_verification :
 bing_site_verification   :
@@ -81,10 +85,9 @@ analytics:
     tracking_id          :
     anonymize_ip         : # true, false (default)
 
-
 # Site Author
 author:
-  name             : "김현정"
+  name             : "느리지만 나아가는 개발자"
   avatar           : "/assets/images/bio-photo.jpg"
   bio              : "느리지만 나아가는 개발자입니다."
   location         : "Seoul, Korea" 
@@ -94,14 +97,14 @@ author:
       url: slothbear.hj@gmail.com
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/sloth-bear"
+      url: "https://github.com/sloth-bear"
 
 # Site Footer
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/sloth-bear"
+      url: "https://github.com/sloth-bear"
 
 # Reading Files
 include:
@@ -227,7 +230,6 @@ compress_html:
   ignore:
     envs: development
 
-
 # Defaults
 defaults:
   # _posts
@@ -241,3 +243,14 @@ defaults:
       comments: # true
       share: true
       related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: false
+      share: true
+      related: false
