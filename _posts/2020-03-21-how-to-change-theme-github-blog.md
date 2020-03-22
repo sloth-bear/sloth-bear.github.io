@@ -107,7 +107,7 @@ git에 대해 익숙하지 않다면 다소 난해하고, 추가적인 검색이
 	
 	# Site Author
 	author:
-	  name     : "김현정"
+	  name     : "느리지만 나아가는 개발자"
 	  avatar   : "/assets/images/bio-photo.jpg"
 	  bio      : "느리지만 나아가는 개발자입니다."
 	  location : "Seoul, Korea"
