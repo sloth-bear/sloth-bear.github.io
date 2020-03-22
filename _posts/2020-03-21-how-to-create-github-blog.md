@@ -14,7 +14,7 @@ tags: jekyll github
 
 
 # 서론
-* 2020-03-22 추가
+* __2020-03-22 추가__  
   GitHub Pages Blogs를 만들기 위해 Jekyll를 비롯해 여러 패키지들을 설치했다.  
   그러나 theme를 적용해보고 나니, Pages를 처음부터 하나하나 만들어보고 싶은 게 아니라면,  
   내가 원하는 theme의 repository에서 모든 폴더를 가져와 만드는 것이 가장 간편하다.  
