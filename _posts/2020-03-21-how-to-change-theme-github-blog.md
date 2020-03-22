@@ -72,7 +72,7 @@ git에 대해 익숙하지 않다면 다소 난해하고, 추가적인 검색이
 
 
 1. `mmistakes/mm-github-pages-starter` download
-	* Repository 내용 다운받기 ([mmistakes/mm-github-pages-starter]https://github.com/mmistakes/mm-github-pages-starter))
+	* Repository 내용 다운받기 ([mmistakes/mm-github-pages-starter](https://github.com/mmistakes/mm-github-pages-starter))
 	`Donwload Zip` 혹은 git clone 
 	```
 	$ git clone https://github.com/mmistakes/mm-github-pages-starter
@@ -90,7 +90,7 @@ git에 대해 익숙하지 않다면 다소 난해하고, 추가적인 검색이
 
 
 4. `_posts`에 글 목록 추가
-작성된 글목록이 있어 posts 폴더를 백업해두었다면, `_posts` 폴더에 추가해준다. 
+	작성된 글목록이 있어 posts 폴더를 백업해두었다면, `_posts` 폴더에 추가해준다. 
 
 
 5. `_config.yml` 수정 
