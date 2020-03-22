@@ -32,8 +32,8 @@ author:
 
 # Reading Files
 include:
-  - _posts
-  # - _pages
+  # - _posts
+   - _pages
   
 # Site Footer
 footer:
