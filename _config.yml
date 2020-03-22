@@ -7,19 +7,19 @@ minimal_mistakes_skin    : "default"
 # Site Settings
 locale                   : "ko-KR"
 title                    : "배운 것을 남기는 공간" # {{ site.title }}
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "김현정"
+name                     : "느리지만 나아가는 개발자"
 description              : "배운 것을 남기기 위한 공간입니다. 개발과 관련된 내용이 주된 내용입니다. "
-url                      : "https://sloth-bear.github.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://sloth-bear.github.com" 
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "sloth-bear/sloth-bear.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "sloth-bear/sloth-bear.github.io"
 github_username          : "sloth-bear"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
+
+# Comments 
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
@@ -81,10 +81,9 @@ analytics:
     tracking_id          :
     anonymize_ip         : # true, false (default)
 
-
 # Site Author
 author:
-  name             : "김현정"
+  name             : "느리지만 나아가는 개발자"
   avatar           : "/assets/images/bio-photo.jpg"
   bio              : "느리지만 나아가는 개발자입니다."
   location         : "Seoul, Korea" 
@@ -101,7 +100,7 @@ footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/sloth-bear"
+      url: "https://github.com/sloth-bear"
 
 # Reading Files
 include:
@@ -171,7 +170,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page/:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Seoul
 
 
 # Plugins (previously gems:)
@@ -238,6 +237,18 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
+
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: false
+      share: true
+      related: false
