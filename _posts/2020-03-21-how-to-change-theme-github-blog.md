@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Github 블로그 만들기 2 - theme 적용하기 (feat. minimal-mistakes)"
-date:   2020-03-21 20:00:00 +0900
+date:   2999-03-21 20:00:00 +0900
 categories: blog
 tags: jekyll github
 ---
