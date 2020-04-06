@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "Github 블로그 만들기 1 - 블로그 생성 (feat. Jekyll)"
 date: 2020-03-21 16:34:00 +0900
 categories: blog
