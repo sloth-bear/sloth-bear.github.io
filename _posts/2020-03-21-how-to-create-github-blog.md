@@ -9,6 +9,7 @@ tags: jekyll github
 
 
 
+
 # GitHub Blog 생성하기 
 
 > Github blog를 생성하기 위한 단계 기록 
@@ -24,6 +25,7 @@ tags: jekyll github
 
 
 
+
 # 순서
 
 * GitHub 가입 및 Repository 생성 
@@ -31,6 +33,7 @@ tags: jekyll github
 * GitHub 원격 저장소를 내 PC로 복제 
 * Jekyll로 사이트 생성 
 * GitHub에 push
+
 
 
 
@@ -50,6 +53,7 @@ http://{username}.github.io
 
 
 
+
 # jekyll 설치
 
 ```
@@ -58,6 +62,7 @@ $ sudo install jekyll
 
 설명 참조: 
 https://help.github.com/en/github/working-with-github-pages/creating-a-github-pages-site-with-jekyll
+
 
 
 
@@ -93,6 +98,7 @@ $ jekyll serve
 
 http://localhost:4000 으로 접속해보니, 잘 접속되었다.  
 `Welcome to Jekyll!` 글을 확인해보면 포스팅에 관해 작성되어있다.  
+
 
 
 # git push 
