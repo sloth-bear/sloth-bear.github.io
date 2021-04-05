@@ -40,7 +40,9 @@ tags: jekyll github
 # GitHub 가입 및 Repository 생성 
 
 GitHub 가입 시에 지정했던 username으로 github repository를 생성한다. 
+
 Repository name : `username.github.io` 
+
 ex) sloth-bear.github.io
 
 http://{username}.github.io  
@@ -96,8 +98,8 @@ Your user account isn't allowed to install to the system RubyGems.
 $ jekyll serve
 ```
 
-http://localhost:4000 으로 접속해보니, 잘 접속되었다.  
-`Welcome to Jekyll!` 글을 확인해보면 포스팅에 관해 작성되어있다.  
+- http://localhost:4000 으로 접속
+- cf) `Welcome to Jekyll!` 글을 확인해보면 포스팅에 관해 작성되어있음
 
 
 
