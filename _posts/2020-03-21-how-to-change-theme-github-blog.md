@@ -1,9 +1,10 @@
 ---
-layout: posts
-title:  "Github 블로그 만들기 2 - theme 적용하기 (feat. minimal-mistakes)"
-date:   2999-03-21 20:00:00 +0900
+layout: post-detail
+title: "Github 블로그 만들기 2 - theme 적용하기 (feat. minimal-mistakes)"
+date: 2020-03-21 20:00:00 +0900
 categories: blog
 tags: jekyll github
+thumbnail: '/assets/thumbnail/2020-03-21-how-to-change-theme-github-blog.png'
 ---
 
 
@@ -19,9 +20,9 @@ Theme 적용에는 두 가지 방법이 있다.
 
 ## 지원되는 테마 사용 
 GitHub Pages 사이트에서 제공되는 theme는 `_config.yml` 파일을 수정해 사용가능하다. 
-```
-# Build settings 
-theme: minima 
+```yaml
+    # Build settings 
+    theme: minima 
 ```
 
 `theme` 부분을 변경하면 된다. 
@@ -41,9 +42,9 @@ theme: minima
 
 
 적용을 위해서는 `_config.yml`을 수정한다.   
-```
-# Build settings 
-remote_theme: benbalter/retlab
+```yaml
+    # Build settings 
+    remote_theme: benbalter/retlab
 ```
 
 `Homepage`로 접속해보면 각 theme별로 설명을 해주고 있으니,   
@@ -73,8 +74,8 @@ git에 대해 익숙하지 않다면 다소 난해하고, 추가적인 검색이
 
 1. `mmistakes/mm-github-pages-starter` download
 	* Repository 내용 다운받기 ([mmistakes/mm-github-pages-starter](https://github.com/mmistakes/mm-github-pages-starter)) - `Donwload Zip` 혹은 `git clone`
-	```
-	$ git clone https://github.com/mmistakes/mm-github-pages-starter
+	```text
+	    $ git clone https://github.com/mmistakes/mm-github-pages-starter
 	```
 	가장 최소한으로 구성된 mmistakes repository를 가져왔다. 
 
@@ -94,47 +95,47 @@ git에 대해 익숙하지 않다면 다소 난해하고, 추가적인 검색이
 
 
 5. `_config.yml` 수정 
-	```
-	# Site Settings 
-	title                 : 배운 것을 남기는 공간 # {{ site.title }}
-	email                 : slothbear.hj@gmail.com
-	description           : 배운 것을 남기기 위한 공간입니다. 개발과 관련된 내용이 주된 내용입니다. 
-	github_username       : sloth-bear
-	minimal_mistakes_skin : default
-	search                : true
-	
-	...
-	
-	# Site Author
-	author:
-	  name     : "느리지만 나아가는 개발자"
-	  avatar   : "/assets/images/bio-photo.jpg"
-	  bio      : "느리지만 나아가는 개발자입니다."
-	  location : "Seoul, Korea"
-	  links:
-	    - label: "Email"
-	      icon: "fas fa-fw fa-envelope-square"
-	      url: slothbear.hj@gmail.com
-	    - label: "GitHub"
-	      icon: "fab fa-fw fa-github"
-	      url: "https://github.com/sloth-bear"
-
-	# Site Footer
-	footer:
-	  links:
-	    - label: "GitHub"
-	      icon: "fab fa-fw fa-github"
-	      url: "https://github.com/sloth-bear"
+	```yaml
+        # Site Settings 
+        title                 : 배운 것을 남기는 공간 # {{ site.title }}
+        email                 : slothbear.hj@gmail.com
+        description           : 배운 것을 남기기 위한 공간입니다. 개발과 관련된 내용이 주된 내용입니다. 
+        github_username       : sloth-bear
+        minimal_mistakes_skin : default
+        search                : true
+        
+        ...
+        
+        # Site Author
+        author:
+          name     : "느리지만 나아가는 개발자"
+          avatar   : "/assets/images/bio-photo.jpg"
+          bio      : "느리지만 나아가는 개발자입니다."
+          location : "Seoul, Korea"
+          links:
+            - label: "Email"
+              icon: "fas fa-fw fa-envelope-square"
+              url: slothbear.hj@gmail.com
+            - label: "GitHub"
+              icon: "fab fa-fw fa-github"
+              url: "https://github.com/sloth-bear"
+    
+        # Site Footer
+        footer:
+          links:
+            - label: "GitHub"
+              icon: "fab fa-fw fa-github"
+              url: "https://github.com/sloth-bear"
 	```
 	
 	모르는 설정들은 과감히 패스하고, 필요해보이는 것들만 수정해두었다. 
 	
 
 6. `git push`
-	```
-	$ git add .
-	$ git commit -m "Init github pages"
-	$ git push
+	```text
+        $ git add .
+        $ git commit -m "Init github pages"
+        $ git push
 	```
 	
 

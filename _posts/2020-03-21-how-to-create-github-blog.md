@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post-detail
 title: "Github 블로그 만들기 1 - 블로그 생성 (feat. Jekyll)"
 date: 2020-03-21 16:34:00 +0900
 categories: blog
@@ -58,8 +58,8 @@ http://{username}.github.io
 
 # jekyll 설치
 
-```
-$ sudo install jekyll 
+```text
+    $ sudo install jekyll 
 ```
 
 설명 참조: 
@@ -70,32 +70,32 @@ https://help.github.com/en/github/working-with-github-pages/creating-a-github-pa
 
 # github에 만든 원격 repository를 내 pc로 복제 
 
-```
-$ git clone https://github.com/sloth-bear/sloth-bear.github.io.git
+```text
+    $ git clone https://github.com/sloth-bear/sloth-bear.github.io.git
 ```
 
 
 
 # Create a new Jekyll site 
 
-```
-$ jekyll new .
-
-Your user account isn't allowed to install to the system RubyGems.
-  You can cancel this installation and run:
-
-      bundle install --path vendor/bundle
-
-  to install the gems into ./vendor/bundle/, or you can enter your password
-  and install the bundled gems to RubyGems using sudo.
+```text
+    $ jekyll new .
+    
+    Your user account isn't allowed to install to the system RubyGems.
+      You can cancel this installation and run:
+    
+          bundle install --path vendor/bundle
+    
+      to install the gems into ./vendor/bundle/, or you can enter your password
+      and install the bundled gems to RubyGems using sudo.
 ```
 
 
 
 # Test to serve
 
-```
-$ jekyll serve
+```text
+    $ jekyll serve
 ```
 
 - http://localhost:4000 으로 접속
@@ -105,10 +105,10 @@ $ jekyll serve
 
 # git push 
 
-```
-$ git add .
-$ git commit -m "init github pages"
-$ git push -u origin master
+```text
+    $ git add .
+    $ git commit -m "init github pages"
+    $ git push -u origin master
 ```
 
 
@@ -128,10 +128,10 @@ https://sloth-bear.github.io/
 
 # Git Push 
 
-```
-$ git add .
-$ git commit -m "Create a new post"
-$ git push 
+```text
+    $ git add .
+    $ git commit -m "Create a new post"
+    $ git push 
 ```
 
 
