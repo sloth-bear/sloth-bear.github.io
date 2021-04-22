@@ -18,13 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 배운것을 남기는 공간
+title: 배운 것을 남기는 공간
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://sloth-bear.github.io" # the hostname & protocol for site
 
 profile:
   github: "https://github.com/sloth-bear"
-  email: "mailto:limeorange711@gmail.com"
+  email: "mailto:slothbear.hj@gmail.com"
 
 plugins:
   - jekyll-feed
