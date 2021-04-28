@@ -68,34 +68,34 @@ okky 커뮤니티의 구인광고에서 관련 과제를 본 적이 있다. 객�
 ### 카드 나눔 시
 
 | 변경 전                                                      | 변경 후                                                      |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![image](https://user-images.githubusercontent.com/62458327/116365834-9e2c2a80-a840-11eb-843d-cbed7526dc18.png)
- | <img width="392" alt="image" src="https://user-images.githubusercontent.com/62458327/116200486-5ab7ba80-a773-11eb-88c6-f9376adbd1b0.png"> |
+| ------------------------------------------------------------| ------------------------------------------------------------|
+| ![image](https://user-images.githubusercontent.com/62458327/116365834-9e2c2a80-a840-11eb-843d-cbed7526dc18.png) |
+| <img width="392" alt="image" src="https://user-images.githubusercontent.com/62458327/116200486-5ab7ba80-a773-11eb-88c6-f9376adbd1b0.png"> |
 
 
 
 ### 카드 등록 시 
 | 변경 전                                                      | 변경 후                                                      |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![image](https://user-images.githubusercontent.com/62458327/116365884-abe1b000-a840-11eb-845b-b9fa09358ba0.png)
- | <img width="439" alt="image" src="https://user-images.githubusercontent.com/62458327/116184398-a316ae80-a75a-11eb-8970-fd77f4144412.png"> |
+| ------------------------------------------------------------| ------------------------------------------------------------|
+| ![image](https://user-images.githubusercontent.com/62458327/116365884-abe1b000-a840-11eb-845b-b9fa09358ba0.png) |
+| <img width="439" alt="image" src="https://user-images.githubusercontent.com/62458327/116184398-a316ae80-a75a-11eb-8970-fd77f4144412.png"> |
 
 
 
 ### 공격 시 
 #### 카드의 공격
 | 변경 전                                                      | 변경 후                                                      |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![image](https://user-images.githubusercontent.com/62458327/116365930-b734db80-a840-11eb-9ee7-466abcb69b68.png)
- | <img width="459" alt="image" src="https://user-images.githubusercontent.com/62458327/116194621-0bba5700-a76c-11eb-9615-9819147e107a.png"> |
+| ------------------------------------------------------------| ------------------------------------------------------------|
+| ![image](https://user-images.githubusercontent.com/62458327/116365930-b734db80-a840-11eb-9ee7-466abcb69b68.png) |
+| <img width="459" alt="image" src="https://user-images.githubusercontent.com/62458327/116194621-0bba5700-a76c-11eb-9615-9819147e107a.png"> |
 
 
 
 #### 영웅의 공격
 | 변경 전                                                      | 변경 후                                                      |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![image](https://user-images.githubusercontent.com/62458327/116365967-c156da00-a840-11eb-9079-e3e7299c2389.png)
- | <img width="670" alt="image" src="https://user-images.githubusercontent.com/62458327/116194641-1248ce80-a76c-11eb-9009-7c72f48975a3.png"> |
+| ------------------------------------------------------------| ------------------------------------------------------------|
+| ![image](https://user-images.githubusercontent.com/62458327/116365967-c156da00-a840-11eb-9079-e3e7299c2389.png) |
+| <img width="670" alt="image" src="https://user-images.githubusercontent.com/62458327/116194641-1248ce80-a76c-11eb-9009-7c72f48975a3.png"> |
 
 
 
