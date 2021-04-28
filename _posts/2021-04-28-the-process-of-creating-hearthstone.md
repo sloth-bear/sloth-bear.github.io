@@ -84,7 +84,7 @@ okky 커뮤니티의 구인광고에서 관련 과제를 본 적이 있다. 객�
 #### 카드의 공격
 |변경 전|변경 후|
 |----------------------------------------------------------- | ----------------------------------------------------------- |
-|![image](https://user-images.githubusercontent.com/62458327/116365930-b734db80-a840-11eb-9ee7-466abcb69b68.png)|![image](https://user-images.githubusercontent.com/62458327/116194621-0bba5700-a76c-11eb-9615-9819147e107a.png")|
+|![image](https://user-images.githubusercontent.com/62458327/116365930-b734db80-a840-11eb-9ee7-466abcb69b68.png)|![image](https://user-images.githubusercontent.com/62458327/116194621-0bba5700-a76c-11eb-9615-9819147e107a.png)|
 
 
 
