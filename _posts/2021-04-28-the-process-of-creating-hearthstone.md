@@ -14,9 +14,9 @@ okky 커뮤니티의 구인광고에서 관련 과제를 본 적이 있다. 객�
 참조 목록은 아래와 같다. 
 
 * 객체지향의 사실과 오해 
-* https://okky.kr/article/358197 
-* https://github.com/jojoldu/oop-java 
-* https://jupiny.com/2019/01/12/object-orientation-fact-and-misunderstanding/ 
+* [Okky - 초보 개발자에게 권장하는 객체지향 모델링 공부 방법](https://okky.kr/article/358197)
+* [Gibhub](https://github.com/jojoldu/oop-java)
+* [객체지향의 사실과 오해 관련 블로그글](https://jupiny.com/2019/01/12/object-orientation-fact-and-misunderstanding/)
 
 책에 따르면 객체에 필요한 상태가 무엇인지를 결정하고 상태에 필요한 행동을 결정하는 것이 설계에 나쁜 영향을 끼친다. 훌륭한 객체를 만들기 위해서는 행동에 초점을 맞추어야 하고, 행동은 객체가 협력에 참여하는 유일한 방법이다. 모든 객체는 섬이 아니라는 점과 일맥상통한다. 때문에 필요한 메시지가 무엇인지를 정하고 그에 따라 행동을 결정한 뒤 필요한 상태를 선택하자는 게 초기 목표였지만, 초기에 구상했던 것과는 다르게 구현 과정에서 설계가 많이 변경되었다. 
 
@@ -101,7 +101,7 @@ okky 커뮤니티의 구인광고에서 관련 과제를 본 적이 있다. 객�
 
 ## 구현 코드
 
-* https://github.com/sloth-bear/hearthstone 
+* [Gihub](https://github.com/sloth-bear/hearthstone)
 
 
 
