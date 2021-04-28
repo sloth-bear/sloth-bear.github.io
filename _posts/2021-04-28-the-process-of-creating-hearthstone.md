@@ -2,7 +2,6 @@
 layout: post-detail
 title: "하스스톤 게임을 통한 OOP 설계 공부"
 date: 2021-04-28 16:38:00 +0900
-categories: blog
 tags: oop java
 ---
 
