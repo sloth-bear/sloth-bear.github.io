@@ -23,3 +23,5 @@ sudo pacman -Syu playonlinux
 ![스크린샷, 2021-05-14 23-47-19](https://user-images.githubusercontent.com/62458327/118289042-e79e9a00-b50f-11eb-8fa0-b3fe54a75689.png)
 ![스크린샷, 2021-05-14 23-55-56](https://user-images.githubusercontent.com/62458327/118289079-f2592f00-b50f-11eb-85f4-36a932b3f4fe.png)
 ![스크린샷, 2021-05-14 23-56-00](https://user-images.githubusercontent.com/62458327/118289087-f38a5c00-b50f-11eb-872d-cca9cfbf9811.png)
+![스크린샷, 2021-05-14 23-57-18](https://user-images.githubusercontent.com/62458327/118289385-43692300-b510-11eb-9860-9ef0d79a0553.png)
+![스크린샷, 2021-05-14 23-58-06](https://user-images.githubusercontent.com/62458327/118289390-449a5000-b510-11eb-89d6-d9da575008d1.png)
