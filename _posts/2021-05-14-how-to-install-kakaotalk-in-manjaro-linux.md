@@ -12,7 +12,7 @@ sudo pacman -Syu playonlinux
 ![스크린샷, 2021-05-14 23-36-18](https://user-images.githubusercontent.com/62458327/118288439-6a732500-b50f-11eb-8711-6f08661d5eab.png)
 
 ## playonlinux > kakaotalk 검색 후 설치
-![스크린샷, 2021-05-14 23-42-09](https://user-images.githubusercontent.com/62458327/118288972-d5bcf700-b50f-11eb-93d3-c18d98d83fb1.png)
+![스크린샷, 2021-05-15 00-06-52](https://user-images.githubusercontent.com/62458327/118290560-8a0b4d00-b511-11eb-8774-3ae5903a8665.png)
 
 
 ![스크린샷, 2021-05-14 23-44-57](https://user-images.githubusercontent.com/62458327/118288975-d6ee2400-b50f-11eb-91d9-8958e89f15dc.png)
