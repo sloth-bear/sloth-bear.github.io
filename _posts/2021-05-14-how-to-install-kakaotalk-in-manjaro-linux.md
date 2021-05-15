@@ -99,6 +99,7 @@ $ sudo pacman -S openssh
 
 # 자료 출처 
 * playonlinux (https://www.playonlinux.com/en/download.html)
+* wine (https://www.winehq.org/)
 * 카카오톡 설치 (https://tolovefeels.tistory.com/65)
 * 에러 관련
   * https://m.blog.naver.com/PostView.nhn?blogId=oj8mm&logNo=221746214224&proxyReferer=https:%2F%2Fwww.google.com%2F
