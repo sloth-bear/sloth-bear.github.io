@@ -66,6 +66,9 @@ sudo pacman -Syu playonlinux
 ![스크린샷, 2021-05-15 13-25-22](https://user-images.githubusercontent.com/62458327/118348230-d8f1ca80-b583-11eb-8b0f-4feb30d6c310.png)
 
 
+카카오톡 공식 홈페이지에서 받은 설치파일
+
+
 ![스크린샷, 2021-05-15 13-25-35](https://user-images.githubusercontent.com/62458327/118348239-de4f1500-b583-11eb-9732-edff8dc1857b.png)
 
 
