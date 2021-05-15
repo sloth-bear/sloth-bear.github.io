@@ -12,7 +12,7 @@ tags: linux arch-linux manjaro
 
 ## playonlinux 설치 
 ```
-sudo pacman -Syu playonlinux
+$ sudo pacman -Syu playonlinux
 ```
 
 정상 설치 후 실행해준다. 
