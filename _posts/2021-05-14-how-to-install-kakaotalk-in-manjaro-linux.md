@@ -26,16 +26,13 @@ $ sudo pacman -Syu playonlinux
 
 
 ### wine 6.0 Version으로 설정 (설치되어있지 않다면 설치 필요)
-![스크린샷, 2021-05-15 13-47-03](https://user-images.githubusercontent.com/62458327/118348274-19514880-b584-11eb-8ef0-14a37c755883.png)
+![스크린샷, 2021-05-15 13-47-11](https://user-images.githubusercontent.com/62458327/118348275-1a827580-b584-11eb-9069-39567f142bd3.png)
 
 
 카카오톡 설치 시 자동으로 설치된다면 설치 후 해당 버전으로 바꾸어주어도 된다. 
 
 
 현재 기준 6.0이 안정된 버전이라고 하여 해당 버전으로 변경하였다. 
-
-
-![스크린샷, 2021-05-15 13-47-11](https://user-images.githubusercontent.com/62458327/118348275-1a827580-b584-11eb-9069-39567f142bd3.png)
 
 
 ### 카카오톡 설치
