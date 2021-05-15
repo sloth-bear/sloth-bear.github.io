@@ -97,3 +97,15 @@ $ sudo pacman -S openssh
 심지어 다시 업데이트가 이루어지면 실행 안 되는 경우가 생길 수 있을 듯...^^;
 
 
+# 자료 출처 
+* playonlinux (https://www.playonlinux.com/en/download.html)
+* 카카오톡 설치 (https://tolovefeels.tistory.com/65)
+* 에러 관련
+  * https://m.blog.naver.com/PostView.nhn?blogId=oj8mm&logNo=221746214224&proxyReferer=https:%2F%2Fwww.google.com%2F
+  * https://hamonikr.org/Free_Board/86912
+  * https://gist.github.com/BEMELON/70f173af95480389445b6f52c6ffada7
+  * https://linuxhint.com/arch_linux_ssh_server/
+  * http://no1linux.org/board_WEnl84/38956
+
+
+
