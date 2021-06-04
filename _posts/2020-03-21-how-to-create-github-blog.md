@@ -36,8 +36,10 @@ tags: jekyll github
 
 
 
-
-# GitHub 가입 및 Repository 생성 
+<div markdown="1" class="stepper text mt-3">
+<h4 markdown="1" data-step="1" class="title">
+    GitHub 가입 및 Repository 생성 
+</h4>
 
 GitHub 가입 시에 지정했던 username으로 github repository를 생성한다. 
 
@@ -48,35 +50,43 @@ ex) sloth-bear.github.io
 http://{username}.github.io  
 
 
-
-## 참조  
-
-- <a href="https://opentutorials.org/course/3084/18891" target="_blank">웹호스팅 (github pages)</a>
-
-
+<a href="https://opentutorials.org/course/3084/18891" target="_blank" class="info">
+참조: 웹호스팅 (github pages)
+</a>
+</div>
 
 
-# jekyll 설치
+<div markdown="1" class="stepper text mt-3">
+<h4 markdown="1" data-step="2" class="title">
+jekyll 설치
+</h4>
 
 ```text
     $ sudo install jekyll 
 ```
 
+<p class="info">
 설명 참조: 
 https://help.github.com/en/github/working-with-github-pages/creating-a-github-pages-site-with-jekyll
+</p>
+</div>
 
 
 
-
-# github에 만든 원격 repository를 내 pc로 복제 
-
+<div markdown="1" class="stepper text mt-3">
+<h4 markdown="1" data-step="3" class="title">
+github에 만든 원격 repository를 내 pc로 복제
+</h4>
 ```text
     $ git clone https://github.com/sloth-bear/sloth-bear.github.io.git
 ```
+</div>
 
 
-
-# Create a new Jekyll site 
+<div markdown="1" class="stepper text mt-3">
+<h4 markdown="1" data-step="4" class="title">
+Create a new Jekyll site
+</h4>
 
 ```text
     $ jekyll new .
@@ -90,20 +100,20 @@ https://help.github.com/en/github/working-with-github-pages/creating-a-github-pa
       and install the bundled gems to RubyGems using sudo.
 ```
 
-
-
-# Test to serve
-
+* Test to serve
 ```text
     $ jekyll serve
 ```
 
-- http://localhost:4000 으로 접속
-- cf) `Welcome to Jekyll!` 글을 확인해보면 포스팅에 관해 작성되어있음
+    * http://localhost:4000 으로 접속
+    * cf) `Welcome to Jekyll!` 글을 확인해보면 포스팅에 관해 작성되어있음
+</div>
 
 
-
-# git push 
+<div markdown="1" class="stepper text mt-3">
+<h4 markdown="1" data-step="5" class="title">
+git push
+</h4>
 
 ```text
     $ git add .
@@ -111,28 +121,28 @@ https://help.github.com/en/github/working-with-github-pages/creating-a-github-pa
     $ git push -u origin master
 ```
 
-
-
-# github pages 접속 테스트 
-
-https://sloth-bear.github.io/ 
+* github pages 접속 테스트 -> https://sloth-bear.github.io/ 
 
 
 
-# 글쓰기 
-
-- `_post`에 마크다운을 사용해 작성 
-- 파일명: `2020-03-21-how-to-create-github-blog.md` 
-
+* 글쓰기 
+    * `_post`에 마크다운을 사용해 작성 
+    * 파일명: `2020-03-21-how-to-create-github-blog.md` 
 
 
-# Git Push 
 
+* Git Push 
 ```text
     $ git add .
     $ git commit -m "Create a new post"
     $ git push 
 ```
+</div>
+
+
+
+
+
 
 
 
