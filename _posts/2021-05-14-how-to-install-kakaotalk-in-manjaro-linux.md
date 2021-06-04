@@ -2,7 +2,7 @@
 layout: post-detail
 title: "만자로 리눅스에서 카카오톡 설치하기"
 date: 2021-05-15 13:41:00 +0900
-category: Blog
+category: blog
 tags: linux arch-linux manjaro
 
 ---
