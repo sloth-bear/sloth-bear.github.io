@@ -15,15 +15,19 @@ Theme 적용에는 두 가지 방법이 있다.
 * 그 외 GitHub에 호스트된 Jekyll theme 사용   
 [jekyllthemes](http://jekyllthemes.org/)
 
-참고: [Adding a theme to your github pages site using jekyll](https://help.github.com/en/github/working-with-github-pages/adding-a-theme-to-your-github-pages-site-using-jekyll)
+<p markdown="1" class="info">참고: [Adding a theme to your github pages site using jekyll](https://help.github.com/en/github/working-with-github-pages/adding-a-theme-to-your-github-pages-site-using-jekyll)</p>
+
 
 
 ## 지원되는 테마 사용 
-GitHub Pages 사이트에서 제공되는 theme는 `_config.yml` 파일을 수정해 사용가능하다. 
+GitHub Pages 사이트에서 제공되는 theme는 `_config.yml` 파일을 수정해 사용가능하다.
+<div markdown="1" class="file-wrapper">
+<p class="filename-badge">_config.yml</p> 
 ```yaml
     # Build settings 
     theme: minima 
 ```
+</div>
 
 `theme` 부분을 변경하면 된다. 
 
@@ -41,11 +45,14 @@ GitHub Pages 사이트에서 제공되는 theme는 `_config.yml` 파일을 수�
 * `Download`: download
 
 
-적용을 위해서는 `_config.yml`을 수정한다.   
+적용을 위해서는 `_config.yml`을 수정한다.
+<div markdown="1" class="file-wrapper">
+<p class="filename-badge">_config.yml</p>   
 ```yaml
     # Build settings 
     remote_theme: benbalter/retlab
 ```
+</div>
 
 `Homepage`로 접속해보면 각 theme별로 설명을 해주고 있으니,   
 먼저 설명을 참고하고 적용해보는 것이 좋을 것 같다.   
@@ -95,41 +102,43 @@ git에 대해 익숙하지 않다면 다소 난해하고, 추가적인 검색이
 
 
 5. `_config.yml` 수정 
-	```yaml
-        # Site Settings 
-        title                 : 배운 것을 남기는 공간 # {{ site.title }}
-        email                 : slothbear.hj@gmail.com
-        description           : 배운 것을 남기기 위한 공간입니다. 개발과 관련된 내용이 주된 내용입니다. 
-        github_username       : sloth-bear
-        minimal_mistakes_skin : default
-        search                : true
-        
-        ...
-        
-        # Site Author
-        author:
-          name     : "느리지만 나아가는 개발자"
-          avatar   : "/assets/images/bio-photo.jpg"
-          bio      : "느리지만 나아가는 개발자입니다."
-          location : "Seoul, Korea"
-          links:
-            - label: "Email"
-              icon: "fas fa-fw fa-envelope-square"
-              url: slothbear.hj@gmail.com
-            - label: "GitHub"
-              icon: "fab fa-fw fa-github"
-              url: "https://github.com/sloth-bear"
+<div markdown="1" class="file-wrapper pl-2">
+<p class="filename-badge">_config.yml</p>
+```yaml
+    # Site Settings 
+    title                 : 배운 것을 남기는 공간 # {{ site.title }}
+    email                 : slothbear.hj@gmail.com
+    description           : 배운 것을 남기기 위한 공간입니다. 개발과 관련된 내용이 주된 내용입니다. 
+    github_username       : sloth-bear
+    minimal_mistakes_skin : default
+    search                : true
     
-        # Site Footer
-        footer:
-          links:
-            - label: "GitHub"
-              icon: "fab fa-fw fa-github"
-              url: "https://github.com/sloth-bear"
-	```
-	
-	모르는 설정들은 과감히 패스하고, 필요해보이는 것들만 수정해두었다. 
-	
+    ...
+    
+    # Site Author
+    author:
+      name     : "느리지만 나아가는 개발자"
+      avatar   : "/assets/images/bio-photo.jpg"
+      bio      : "느리지만 나아가는 개발자입니다."
+      location : "Seoul, Korea"
+      links:
+        - label: "Email"
+          icon: "fas fa-fw fa-envelope-square"
+          url: slothbear.hj@gmail.com
+        - label: "GitHub"
+          icon: "fab fa-fw fa-github"
+          url: "https://github.com/sloth-bear"
+
+    # Site Footer
+    footer:
+      links:
+        - label: "GitHub"
+          icon: "fab fa-fw fa-github"
+          url: "https://github.com/sloth-bear"
+```
+    
+모르는 설정들은 과감히 패스하고, 필요해보이는 것들만 수정해두었다. 
+</div>
 
 6. `git push`
 	```text
