@@ -102,43 +102,43 @@ git에 대해 익숙하지 않다면 다소 난해하고, 추가적인 검색이
 
 
 5. `_config.yml` 수정 
-<div markdown="1" class="file-wrapper pl-2">
-<p class="filename-badge">_config.yml</p>
-```yaml
-    # Site Settings 
-    title                 : 배운 것을 남기는 공간 # {{ site.title }}
-    email                 : slothbear.hj@gmail.com
-    description           : 배운 것을 남기기 위한 공간입니다. 개발과 관련된 내용이 주된 내용입니다. 
-    github_username       : sloth-bear
-    minimal_mistakes_skin : default
-    search                : true
+    <div markdown="1" class="file-wrapper">
+    <p class="filename-badge">_config.yml</p>
+    ```yaml
+        # Site Settings 
+        title                 : 배운 것을 남기는 공간 # {{ site.title }}
+        email                 : slothbear.hj@gmail.com
+        description           : 배운 것을 남기기 위한 공간입니다. 개발과 관련된 내용이 주된 내용입니다. 
+        github_username       : sloth-bear
+        minimal_mistakes_skin : default
+        search                : true
+        
+        ...
+        
+        # Site Author
+        author:
+          name     : "느리지만 나아가는 개발자"
+          avatar   : "/assets/images/bio-photo.jpg"
+          bio      : "느리지만 나아가는 개발자입니다."
+          location : "Seoul, Korea"
+          links:
+            - label: "Email"
+              icon: "fas fa-fw fa-envelope-square"
+              url: slothbear.hj@gmail.com
+            - label: "GitHub"
+              icon: "fab fa-fw fa-github"
+              url: "https://github.com/sloth-bear"
     
-    ...
-    
-    # Site Author
-    author:
-      name     : "느리지만 나아가는 개발자"
-      avatar   : "/assets/images/bio-photo.jpg"
-      bio      : "느리지만 나아가는 개발자입니다."
-      location : "Seoul, Korea"
-      links:
-        - label: "Email"
-          icon: "fas fa-fw fa-envelope-square"
-          url: slothbear.hj@gmail.com
-        - label: "GitHub"
-          icon: "fab fa-fw fa-github"
-          url: "https://github.com/sloth-bear"
-
-    # Site Footer
-    footer:
-      links:
-        - label: "GitHub"
-          icon: "fab fa-fw fa-github"
-          url: "https://github.com/sloth-bear"
-```
-    
-모르는 설정들은 과감히 패스하고, 필요해보이는 것들만 수정해두었다. 
-</div>
+        # Site Footer
+        footer:
+          links:
+            - label: "GitHub"
+              icon: "fab fa-fw fa-github"
+              url: "https://github.com/sloth-bear"
+    ```
+        
+    모르는 설정들은 과감히 패스하고, 필요해보이는 것들만 수정해두었다. 
+    </div>
 
 6. `git push`
 	```text
