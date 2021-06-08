@@ -1,5 +1,5 @@
 <div class="navigation-bar default">
-    <section class="mt-3">
+    <section class="mt-3 body">
         <h1 class="title">
             <a href="/">
                 {{ site.title }}
@@ -12,13 +12,13 @@
             <li>
                 {% assign categoryName = category | first | downcase %}
                 {% if currentCategoryName contains categoryName %}
-                    <a href="/{{ categoryName }}" class="{{ categoryName }} active">
-                        {{ category | first | upcase }}
-                    </a>
+                <a href="/{{ categoryName }}" class="{{ categoryName }} active">
+                    {{ category | first | upcase }}
+                </a>
                 {% else %}
-                    <a href="/{{ categoryName }}" class="{{ categoryName }}">
-                        {{ category | first | upcase }}
-                    </a>
+                <a href="/{{ categoryName }}" class="{{ categoryName }}">
+                    {{ category | first | upcase }}
+                </a>
                 {% endif %}
             </li>
             {% endfor %}
@@ -27,9 +27,9 @@
     <section class="footer">
         <div class="profile-container">
             {% for profile in site.profile %}
-                <a href="{{ profile | last }}" target="_blank" >
-                    <i class="icon {{ profile | first }}"></i>
-                </a>
+            <a href="{{ profile | last }}" target="_blank" >
+                <i class="icon {{ profile | first }}"></i>
+            </a>
             {% endfor %}
         </div>
     </section>
@@ -37,7 +37,7 @@
 
 <div class="navigation-bar mobile">
     <div class="header">
-        <h5 class="title">
+        <h5 class="title ml-2">
             <a href="/">
                 {{ site.title }}
             </a>
