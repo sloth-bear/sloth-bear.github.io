@@ -13,7 +13,7 @@
             {% for post in site.posts limit: 6 %}
             <li>
                 <a href="{{ post.url }}" class="thumbnail-wrapper">
-                    <img src="{{ post.thumbnail | relative_url }}" class="thumbnail" onerror="this.src='https://miro.medium.com/max/1400/1*KOAfAOQ9FwAp9i2muTkGWw.png'" />
+                    <img src="{{ post.thumbnail | relative_url }}" class="thumbnail" onerror="this.src='https://miro.medium.com/max/1400/1*KOAfAOQ9FwAp9i2muTkGWw.png';this.style='object-fit:cover'" />
                 </a>
                 <div class="additional-info-wrapper">
                     {% include category-link.html categories=post.categories class="category" %}
