@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-    {% include head.html %}
+{% include head.html %}
 
-    <body class="{{ page.layout }} {{ site.custom-theme }} {{ page.contentsType | default: 'text' }} container">
-        {% include navigation-bar.html %}
+<body class="{{ page.layout }} {{ site.custom-theme }} {{ page.contentsType | default: 'text' }} container">
+{% include navigation-bar.html %}
 
-        <div class="contents-wrapper">
-            <span class="category-badge">{{ page.categories | first | upcase }}</span>
-            <h2 class="title">{{ page.title }}</h2>
-            <p class="date">{{ page.date | date: '%Y.%m.%d' }}</p>
-            <div class="post-content mt-5">
-                {{ page.content }}
-            </div>
-            <div class="mt-3 text-left">
-                {% for tag in page.tags %}
-                <span class="tag"># {{ tag }} </span>
-                {% endfor %}
-            </div>
-        </div>
-    </body>
+<div class="contents-wrapper">
+    {% assign category = page.categories | first %}
+    <span class="category-badge {{ site.category-color-class[category] }}">{{ category | upcase }}</span>
+    <h2 class="title">{{ page.title }}</h2>
+    <p class="date">{{ page.date | date: '%Y.%m.%d' }}</p>
+    <div class="post-content mt-5">
+        {{ page.content }}
+    </div>
+
+    {% include tag-container.html tags=page.tags class="mt-3 text-left" %}
+</div>
+
+</body>
 </html>

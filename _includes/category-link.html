@@ -1,0 +1,5 @@
+{% assign category = include.categories | first %}
+
+<a href="{{ category | downcase | relative_url }}" class="{{include.class}} {{ site.category-color-class[category] }}">
+    {{ category | upcase }}
+</a>
