@@ -21,6 +21,7 @@
 title: 배운 것을 남기는 공간
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://sloth-bear.github.io" # the hostname & protocol for site
+static_server_url: "https://super-dev.xyz/static"
 
 profile:
   github: "https://github.com/sloth-bear"
