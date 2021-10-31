@@ -85,6 +85,7 @@ bean이 생성될 때 Spring이 제공하는 <u>커스터마이징 기회(life c
 <details>
 	<summary>상세히 보기</summary>
 	<div>
+	  <pre>
 		1. Spring이 bean을 인스턴스화 한다. 
 		2. Spring이 값, bean reference를 bean의 property에 주입한다. 
 		3. 빈이 `BeanNameAware`를 구현하면, Spring이 Bean의 ID를 `setBeanName()` 메소드에 넘긴다. 
@@ -95,6 +96,7 @@ bean이 생성될 때 Spring이 제공하는 <u>커스터마이징 기회(life c
 		8. 빈이 BeanPostProcessor를 구현하면, 스프링은 postProcessAfterInitialization() 메소드를 호출한다.
 		9. 이 상태가 되면 빈은 어플리케이션에서 사용할 준비가 된 것이며, 어플리케이션 컨텍스트가 소멸될 때까지 어플리케이션 컨텍스트에 남아 있다. 
 		10. 빈이 `DisposableBean` 인터페이스를 구현하면, Spring은 `destroy()` 메소드를 호출한다. custom destroy method가 존재한다면 해당 메소드가 호출된다. 
+	  </pre>
 	</div>
 </details>
 
