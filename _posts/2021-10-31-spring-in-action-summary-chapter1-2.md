@@ -105,7 +105,6 @@ Spring이 제공하는 Bean의 Life cycle callback 구현 방법은 아래와 �
 
 2. 프로그래밍 
 * `InitializingBean`, `DisposableBean` interface 사용 -> Spring과 불필요하게 연결되기 때문에 사용하지 않는 것을 권장함
-* 
 
 3. XML 
 * `init-method`, `destory-method` attribute 사용
