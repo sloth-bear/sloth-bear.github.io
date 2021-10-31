@@ -29,7 +29,7 @@ Spring Container는 여러 가지가 있다. 여러 컨테이너 구현체가 �
 <u>DI에 대한 기본적인 지원을 제공</u>하는 가장 단순한 Container다. 
 
 *  어플리케이션 컨텍스트
-[ApplicationContext (org.springframework.context.ApplicationContext)(https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/context/ApplicationContext.html) interface에 의해 정의된다.
+[ApplicationContext (org.springframework.context.ApplicationContext)](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/context/ApplicationContext.html) interface에 의해 정의된다.
 빈팩토리를 확장해서 property file에 텍스트 메시지를 읽고, 해당 이벤트 리스너에 대한 애플리케이션 이벤트 발행 같은 애플리케이션 프레임워크 서비스를 제공하는 컨테이너다.
 
 Spring으로 작업할 때 빈팩토리나 어플리케이션 컨텍스트 중 아무거나 사용해도 상관없지만 빈팩토리는 지나치게 저수준의 기능을 제공하므로 일반적으로 어플리케이션 컨텍스트를 더 선호한다. 
