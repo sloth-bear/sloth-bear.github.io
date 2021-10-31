@@ -37,7 +37,6 @@ Spring으로 작업할 때 빈팩토리나 어플리케이션 컨텍스트 중 �
 
 ### 1-1. Application Context
 Spring에는 다양한 종류의 application context가 존재한다. 가장 많이 접하게 될 세 가지는 아래와 같다. (2021년 기준으로 다섯 가지라 다섯 가지를 소개한다.)
-application context를 얻은 다음 context의 `getBean()` 메소드를 호출해 Spring container에서 bean을 조회할 수 있다.
 
 * AnnotationConfigApplicationContext
 Spring 3.0에서 도입. `@Configuration`, `@Component`로 정의된 내용을 가져올 수 있다. 
@@ -57,16 +56,16 @@ ApplicationContext context = new FileSystemXmlApplicationContext("c:/foo.xml");
 ```
 
 * ClassPathXmlApplicationContext
-ClassPath에 위치한 xml 파일에서 context 정의 내용을 load한다.
+ClassPath에 위치한 xml 파일에서 context 정의 내용을 load한다. 이 경우 클래스패스에 포함된 모든 경로(JAR 파일 포함)에서 찾으려 한다. 
 
 ```
 ApplicationContext context = new ClassPathXmlApplicationContext("foo.xml");
 ```
 
-이 경우 클래스패스에 포함된 모든 경로(JAR 파일 포함)에서 찾으려 한다. 
+application context를 얻은 다음 context의 `getBean()` 메소드를 호출해 Spring container에서 bean을 조회할 수 있다.
  
  
- ### 1-2. Bean Life Cycle
+### 1-2. Bean Life Cycle
 일반적인 Java application에서 bean의 생명주기는 매우 단순하다. new keyword를 이용하거나 역직렬화(deserialization)를 통해 bean을 인스턴스화하고, 이를 바로 사용한다.
 빈이 더 이상 사용되지 않으면 가비지 컬렉션 후보가 되어 언젠가 메모리 덩어리가 됐다가 사라지게 될 것이다. 
 
@@ -85,18 +84,16 @@ bean이 생성될 때 Spring이 제공하는 <u>커스터마이징 기회(life c
 <details>
 <summary>상세히 보기</summary>
 <div>
-<pre>
-1. Spring이 bean을 인스턴스화 한다. 
-2. Spring이 값, bean reference를 bean의 property에 주입한다. 
-3. 빈이 `BeanNameAware`를 구현하면, Spring이 Bean의 ID를 `setBeanName()` 메소드에 넘긴다. 
-4. 빈이 `BeanFactoryAware`를 구현하면, `setBeanFactory()` 메소드를 호출하여 빈팩토리 자체를 넘긴다.
-5. 빈이 `ApplicationContextAware`를 구현하면, Spring이 `setApplicationContext()` 메소드를 호출하고, 둘러싼(enclosing) 어플리케이션 컨텍스트에 대한 참조를 넘긴다. 
-6. 빈이 BeanPostProcessor 인터페이스를 구현하면, Spring은 postProcessBeforeInitialization() 메소드를 호출한다.
-7. 빈이 InitializingBean 인터페이스를 구현하면, 스프링은 afterPropertiesSet() 메소드를 호출한다. custom init method가 존재한다면 해당 메소드가 호출된다.
-8. 빈이 BeanPostProcessor를 구현하면, 스프링은 postProcessAfterInitialization() 메소드를 호출한다.
-9. 이 상태가 되면 빈은 어플리케이션에서 사용할 준비가 된 것이며, 어플리케이션 컨텍스트가 소멸될 때까지 어플리케이션 컨텍스트에 남아 있다. 
+1. Spring이 bean을 인스턴스화 한다.<br>
+2. Spring이 값, bean reference를 bean의 property에 주입한다. <br>
+3. 빈이 `BeanNameAware`를 구현하면, Spring이 Bean의 ID를 `setBeanName()` 메소드에 넘긴다. <br>
+4. 빈이 `BeanFactoryAware`를 구현하면, `setBeanFactory()` 메소드를 호출하여 빈팩토리 자체를 넘긴다.<br>
+5. 빈이 `ApplicationContextAware`를 구현하면, Spring이 `setApplicationContext()` 메소드를 호출하고, 둘러싼(enclosing) 어플리케이션 컨텍스트에 대한 참조를 넘긴다. <br>
+6. 빈이 BeanPostProcessor 인터페이스를 구현하면, Spring은 postProcessBeforeInitialization() 메소드를 호출한다.<br>
+7. 빈이 InitializingBean 인터페이스를 구현하면, 스프링은 afterPropertiesSet() 메소드를 호출한다. custom init method가 존재한다면 해당 메소드가 호출된다.<br>
+8. 빈이 BeanPostProcessor를 구현하면, 스프링은 postProcessAfterInitialization() 메소드를 호출한다.<br>
+9. 이 상태가 되면 빈은 어플리케이션에서 사용할 준비가 된 것이며, 어플리케이션 컨텍스트가 소멸될 때까지 어플리케이션 컨텍스트에 남아 있다. <br>
 10. 빈이 `DisposableBean` 인터페이스를 구현하면, Spring은 `destroy()` 메소드를 호출한다. custom destroy method가 존재한다면 해당 메소드가 호출된다. 
-</pre>
 </div>
 </details>
 
