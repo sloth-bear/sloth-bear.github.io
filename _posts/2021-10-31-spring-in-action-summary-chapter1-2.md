@@ -36,7 +36,7 @@ Spring으로 작업할 때 빈팩토리나 어플리케이션 컨텍스트 중 �
 
 
 ### 1-1. Application Context
-Spring에는 다양한 종류의 application context가 존재한다. 가장 많이 접하게 될 세 가지는 아래와 같다. (2021년 기준으로 5가지라 5가지를 소개한다.)
+Spring에는 다양한 종류의 application context가 존재한다. 가장 많이 접하게 될 세 가지는 아래와 같다. (2021년 기준으로 다섯 가지라 다섯 가지를 소개한다.)
 application context를 얻은 다음 context의 `getBean()` 메소드를 호출해 Spring container에서 bean을 조회할 수 있다.
 
 * AnnotationConfigApplicationContext
