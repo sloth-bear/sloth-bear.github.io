@@ -83,21 +83,21 @@ bean instance는 Java 또는 XML bean 정의를 기반으로 인스턴스화 된
 bean이 생성될 때 Spring이 제공하는 <u>커스터마이징 기회(life cycle callback method)</u>를 이용하려면 Life Cycle을 이해해두는 것이 좋다. 
 
 <details>
-	<summary>상세히 보기</summary>
-	<div>
-	  <pre>
-		1. Spring이 bean을 인스턴스화 한다. 
-		2. Spring이 값, bean reference를 bean의 property에 주입한다. 
-		3. 빈이 `BeanNameAware`를 구현하면, Spring이 Bean의 ID를 `setBeanName()` 메소드에 넘긴다. 
-		4. 빈이 `BeanFactoryAware`를 구현하면, `setBeanFactory()` 메소드를 호출하여 빈팩토리 자체를 넘긴다.
-		5. 빈이 `ApplicationContextAware`를 구현하면, Spring이 `setApplicationContext()` 메소드를 호출하고, 둘러싼(enclosing) 어플리케이션 컨텍스트에 대한 참조를 넘긴다. 
-		6. 빈이 BeanPostProcessor 인터페이스를 구현하면, Spring은 postProcessBeforeInitialization() 메소드를 호출한다.
-		7. 빈이 InitializingBean 인터페이스를 구현하면, 스프링은 afterPropertiesSet() 메소드를 호출한다. custom init method가 존재한다면 해당 메소드가 호출된다.
-		8. 빈이 BeanPostProcessor를 구현하면, 스프링은 postProcessAfterInitialization() 메소드를 호출한다.
-		9. 이 상태가 되면 빈은 어플리케이션에서 사용할 준비가 된 것이며, 어플리케이션 컨텍스트가 소멸될 때까지 어플리케이션 컨텍스트에 남아 있다. 
-		10. 빈이 `DisposableBean` 인터페이스를 구현하면, Spring은 `destroy()` 메소드를 호출한다. custom destroy method가 존재한다면 해당 메소드가 호출된다. 
-	  </pre>
-	</div>
+<summary>상세히 보기</summary>
+<div>
+<pre>
+1. Spring이 bean을 인스턴스화 한다. 
+2. Spring이 값, bean reference를 bean의 property에 주입한다. 
+3. 빈이 `BeanNameAware`를 구현하면, Spring이 Bean의 ID를 `setBeanName()` 메소드에 넘긴다. 
+4. 빈이 `BeanFactoryAware`를 구현하면, `setBeanFactory()` 메소드를 호출하여 빈팩토리 자체를 넘긴다.
+5. 빈이 `ApplicationContextAware`를 구현하면, Spring이 `setApplicationContext()` 메소드를 호출하고, 둘러싼(enclosing) 어플리케이션 컨텍스트에 대한 참조를 넘긴다. 
+6. 빈이 BeanPostProcessor 인터페이스를 구현하면, Spring은 postProcessBeforeInitialization() 메소드를 호출한다.
+7. 빈이 InitializingBean 인터페이스를 구현하면, 스프링은 afterPropertiesSet() 메소드를 호출한다. custom init method가 존재한다면 해당 메소드가 호출된다.
+8. 빈이 BeanPostProcessor를 구현하면, 스프링은 postProcessAfterInitialization() 메소드를 호출한다.
+9. 이 상태가 되면 빈은 어플리케이션에서 사용할 준비가 된 것이며, 어플리케이션 컨텍스트가 소멸될 때까지 어플리케이션 컨텍스트에 남아 있다. 
+10. 빈이 `DisposableBean` 인터페이스를 구현하면, Spring은 `destroy()` 메소드를 호출한다. custom destroy method가 존재한다면 해당 메소드가 호출된다. 
+</pre>
+</div>
 </details>
 
 Spring이 제공하는 Bean의 Life cycle callback 구현 방법은 아래와 같다. 
