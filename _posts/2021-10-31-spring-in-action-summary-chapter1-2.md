@@ -172,6 +172,7 @@ Spring DI를 활용하려면, container에 어플리케이션 객체를 넣고 w
 
 
 # References
+* Craig Walls, Spring in action thrid edition
 * https://www.baeldung.com/spring-application-context
 * https://howtodoinjava.com/spring-core/spring-bean-life-cycle/
 * https://www.geeksforgeeks.org/bean-life-cycle-in-java-spring/
