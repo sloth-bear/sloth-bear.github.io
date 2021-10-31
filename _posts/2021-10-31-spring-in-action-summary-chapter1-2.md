@@ -153,7 +153,7 @@ public class HelloWorldTests {
 ```
 
 
-Component annotation으로 선언하였으니 당연히 해당 bean은 정상적으로 등록됨을 확인할 수 있다. 그리고 bean 생명주기에 따라 init, destroy 메소드가 정상적으로 실행됨을 확인하였다. 이외에도 DI 방법에 따라 (생성자, setter, field) 종속객체 주입 시점이 달라진다. 
+Component annotation으로 선언하였으니 당연히 해당 bean은 정상적으로 등록됨을 확인할 수 있다. 여기서 사용된 application context는 `AnnotationConfigApplicationContext`로, 해당 container를 사용하도록 Spring boot에 설정되어있다. (관련해서 소스코드를 찾아본다면 좋을 것 같다.) 그리고 bean 생명주기에 따라 init, destroy 메소드가 정상적으로 실행됨을 확인하였다. 이외에도 DI 방법에 따라 (생성자, setter, field) 종속객체 주입 시점이 달라진다. 
 
 Spring container가 어떻게 생성되고 로드되는지는 확인하였으나 아직 container에 아무것도 넣지 않았기 때문에 쓸모가 없다.
 Spring DI를 활용하려면, container에 어플리케이션 객체를 넣고 wiring 해주어야 한다. 
@@ -175,3 +175,4 @@ Spring DI를 활용하려면, container에 어플리케이션 객체를 넣고 w
 * https://www.geeksforgeeks.org/bean-life-cycle-in-java-spring/
 * https://devlog-wjdrbs96.tistory.com/321
 * https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-factory-nature
+* https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#features.spring-application.web-environment
