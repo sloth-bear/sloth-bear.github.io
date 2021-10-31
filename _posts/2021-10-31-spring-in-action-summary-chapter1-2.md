@@ -100,10 +100,17 @@ bean이 생성될 때 Spring이 제공하는 <u>커스터마이징 기회(life c
 
 Spring이 제공하는 Bean의 Life cycle callback 구현 방법은 아래와 같다. 
 1. Annotation 
-2. 프로그래밍 
-3. XML 
+* 자바 표준 annotation (JSR-250)
+* 최신 Spring application에서 권장: bean이 Spring의 특정 interface에 연결되지 않기 때문, JSR-250 annotation을 사용하지 않고 coupling을 제거하려면 xml의 init-method, destory-method 정의 방법 고려 
 
-3가지 방법 중 Annotation을 이용해 구현해보았다. 
+2. 프로그래밍 
+* `InitializingBean`, `DisposableBean` interface 사용 -> Spring과 불필요하게 연결되기 때문에 사용하지 않는 것을 권장함
+* 
+
+3. XML 
+* `init-method`, `destory-method` attribute 사용
+
+3가지 방법 중 Annotation(JSR-250)을 이용해 간단하게 구현해보았다. 
 
 * HelloWorld.java
 
@@ -147,10 +154,8 @@ public class HelloWorldTests {
 }
 ```
 
-* Result
 
-![Result in console](https://user-images.githubusercontent.com/62458327/139584717-566ff9c9-4038-4d42-b339-d423068f7aef.png)
-
+Component annotation으로 선언하였으니 당연히 해당 bean은 정상적으로 등록됨을 확인할 수 있다. 그리고 bean 생명주기에 따라 init, destroy 메소드가 정상적으로 실행됨을 확인하였다. 이외에도 DI 방법에 따라 (생성자, setter, field) 종속객체 주입 시점이 달라진다. 
 
 Spring container가 어떻게 생성되고 로드되는지는 확인하였으나 아직 container에 아무것도 넣지 않았기 때문에 쓸모가 없다.
 Spring DI를 활용하려면, container에 어플리케이션 객체를 넣고 wiring 해주어야 한다. 
@@ -169,3 +174,5 @@ Spring DI를 활용하려면, container에 어플리케이션 객체를 넣고 w
 * https://www.baeldung.com/spring-application-context
 * https://howtodoinjava.com/spring-core/spring-bean-life-cycle/
 * https://www.geeksforgeeks.org/bean-life-cycle-in-java-spring/
+* https://devlog-wjdrbs96.tistory.com/321
+* https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-factory-nature
