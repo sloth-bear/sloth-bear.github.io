@@ -105,6 +105,52 @@ Spring이 제공하는 Bean의 Life cycle callback 구현 방법은 아래와 �
 
 3가지 방법 중 Annotation을 이용해 구현해보았다. 
 
+* HelloWorld.java
+
+```
+...
+@Component
+public class HelloWorld {
+
+  @PostConstruct
+  public void init() {
+    System.out.println(
+        "HelloWorld Bean has been instantiated "
+        + "and I am the init() method!");
+  }
+
+  @PreDestroy
+  public void destroy() {
+    System.out.println(
+        "HelloWorld Bean has been closed "
+            + "and I am the destroy() method!");
+  }
+  
+}
+```
+
+* HelloWorldTests.java
+
+```
+@SpringBootTest
+public class HelloWorldTests {
+
+  @Autowired
+  ApplicationContext context;
+
+  @Test
+  public void test_that_successfully_created_bean() {
+    HelloWorld helloWorld = context.getBean(HelloWorld.class);
+    
+    assert (Objects.nonNull(helloWorld));
+  }
+}
+```
+
+* Result
+
+![Result in console](https://user-images.githubusercontent.com/62458327/139584717-566ff9c9-4038-4d42-b339-d423068f7aef.png)
+
 
 Spring container가 어떻게 생성되고 로드되는지는 확인하였으나 아직 container에 아무것도 넣지 않았기 때문에 쓸모가 없다.
 Spring DI를 활용하려면, container에 어플리케이션 객체를 넣고 wiring 해주어야 한다. 
